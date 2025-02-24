@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        
+        #hero {
+            text-align: center;
+            padding: 50px;
+            background: #fff;
+            animation: slideIn 1s ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #hero img {
+            border-radius: 60%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        h2, h3 {
+            color: #ff6600;
+            transition: text-shadow 0.3s ease-in-out;
+        }
+        
+        h2:hover, h3:hover {
+            text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+        }
+        
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #ffcc00;
+            color: #333;
+            transform: scale(1.1);
+        }
+        
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        section:hover {
+            transform: scale(1.02);
+        }
+        
+        .project {
+            transition: transform 0.3s ease;
+        }
+        
+        .project:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            animation: fadeIn 1s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Shreshta Shet </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <img src="C:\Users\chithra\Pictures\ME\IMG-20220930-WA0019.jpg" alt="Shreshta's Photo">
+        <div>
+            <h2>Hi all, I'm <span>Shreshta</span> 👋</h2>
+            <p>Final year BCA student</p>
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="C:\Users\chithra\Downloads\shreshta resume.pdf" class="btn">See My Resume</a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Shreshta Shet, a final year BCA student at Canara College, Mangalore. I love coding and tackling challenges.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Programming Languages: HTML, CSS, JavaScript, Python, Java, C, C++</p>
+        <p>MS Office</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Simple Calculator</h3>
+            <p>Technologies Used: HTML, CSS, JavaScript</p>
+            <P>Simple calculator which performs arithmatic operators such as Addition,Subtraction,Multiplication,Division and also stores history of calculation</P>
+            <a href="D:\Calculator.html" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Landing Page</h3>
+            <p>Technologies Used: HTML, CSS, JavaScript</p>
+            <a href="D:\New folder\INTERNSGIP\landing page\landingpage.html" target="_blank">View Project</a>
+        </div>
+        <div section=""project">
+            <h3> QR Code Generator</h3>
+            <p>Technologies Used: HTML, CSS, JavaScriot</p>
+            <p>Developed a QR CODE GENERATOR web application that allows user to generate QR codes
+                based on text or URL input.The application provides an intuitive user interface where users can input any text or URL
+                and generate a QR code in real-time.</p>
+            <a href="D:\qrcode.html" target="_blank">View Project</a>
+            </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email:</p>  
+        <a href="mailto:srajitharshet123@gmail.com">Send me an email</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Shreshta</p>
+    </footer>
+</body>
+</html>
