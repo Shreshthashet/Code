@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .calculator {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    padding: 20px;
+    width: 260px;
+    margin: 45px auto;
+  }
+  
+  #display {
+    width: 90%;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    color:#fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .history-btn {
+    grid-column: span 4; /* Span across the entire width */
+    background-color: teal;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .history-btn:hover {
+    background-color: darkcyan;
+  }
+  
+  .history {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 100px;
+    overflow-y: auto;
+    font-size: 16px;
+    color: black;
+    display: none; /* Initially hidden */
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    height: 40px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .result {
+      grid-column: span 3;
+      
+  }
+  
+  .btn:hover {
+    background-color: red;
+  }
+  
+  .btn:active {
+    background-color: #fff;
+  }
+  
